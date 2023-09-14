@@ -1,0 +1,148 @@
+{
+  "config": {
+    "configFile": "/Users/lujing/Desktop/my-app/playwright.config.ts",
+    "rootDir": "/Users/lujing/Desktop/my-app/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/lujing/Desktop/my-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/lujing/Desktop/my-app/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.38.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "list.spec.ts",
+      "file": "list.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "list",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 1767,
+                  "error": {
+                    "message": "\u001b[31mScreenshot comparison failed:\u001b[39m\n\n  709 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(list0.png) with timeout 30000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('.ant-drawer-body')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"ant-drawer-body\">…</div>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  - 709 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('.ant-drawer-body')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"ant-drawer-body\">…</div>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 709 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33m/Users/lujing/Desktop/my-app/e2e/list.spec.ts-snapshots/list0-chromium-darwin.png\u001b[39m\nReceived: \u001b[33m/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-actual.png\u001b[39m\n    Diff: \u001b[33m/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-diff.png\u001b[39m",
+                    "stack": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  709 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(list0.png) with timeout 30000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('.ant-drawer-body')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"ant-drawer-body\">…</div>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  - 709 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('.ant-drawer-body')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"ant-drawer-body\">…</div>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 709 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33m/Users/lujing/Desktop/my-app/e2e/list.spec.ts-snapshots/list0-chromium-darwin.png\u001b[39m\nReceived: \u001b[33m/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-actual.png\u001b[39m\n    Diff: \u001b[33m/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-diff.png\u001b[39m\n    at /Users/lujing/Desktop/my-app/e2e/list.spec.ts:17:41\n    at antDrawerScreenshot (/Users/lujing/Desktop/my-app/e2e/list.spec.ts:4:10)\n    at /Users/lujing/Desktop/my-app/e2e/list.spec.ts:27:3",
+                    "location": {
+                      "file": "/Users/lujing/Desktop/my-app/e2e/list.spec.ts",
+                      "column": 41,
+                      "line": 17
+                    },
+                    "snippet": "  15 |   const imgCount = Math.ceil(height / perHeight)\n  16 |   for (let i = 0; i < imgCount; i++) {\n> 17 |     await expect(page.locator(locator)).toHaveScreenshot(`${name}${i}.png`);\n     |                                         ^\n  18 |     await element.evaluate((node, y) => {\n  19 |       node.scrollBy(0, y);\n  20 |     }, (i + 1) * perHeight);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lujing/Desktop/my-app/e2e/list.spec.ts",
+                        "column": 41,
+                        "line": 17
+                      },
+                      "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  709 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(list0.png) with timeout 30000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('.ant-drawer-body')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"ant-drawer-body\">…</div>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  - 709 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('.ant-drawer-body')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"ant-drawer-body\">…</div>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 709 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33m/Users/lujing/Desktop/my-app/e2e/list.spec.ts-snapshots/list0-chromium-darwin.png\u001b[39m\nReceived: \u001b[33m/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-actual.png\u001b[39m\n    Diff: \u001b[33m/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-diff.png\u001b[39m\n\n  15 |   const imgCount = Math.ceil(height / perHeight)\n  16 |   for (let i = 0; i < imgCount; i++) {\n> 17 |     await expect(page.locator(locator)).toHaveScreenshot(`${name}${i}.png`);\n     |                                         ^\n  18 |     await element.evaluate((node, y) => {\n  19 |       node.scrollBy(0, y);\n  20 |     }, (i + 1) * perHeight);\n\n    at /Users/lujing/Desktop/my-app/e2e/list.spec.ts:17:41\n    at antDrawerScreenshot (/Users/lujing/Desktop/my-app/e2e/list.spec.ts:4:10)\n    at /Users/lujing/Desktop/my-app/e2e/list.spec.ts:27:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-09-14T03:23:38.103Z",
+                  "attachments": [
+                    {
+                      "name": "list0-expected.png",
+                      "contentType": "image/png",
+                      "path": "/Users/lujing/Desktop/my-app/e2e/list.spec.ts-snapshots/list0-chromium-darwin.png"
+                    },
+                    {
+                      "name": "list0-actual.png",
+                      "contentType": "image/png",
+                      "path": "/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-actual.png"
+                    },
+                    {
+                      "name": "list0-diff.png",
+                      "contentType": "image/png",
+                      "path": "/Users/lujing/Desktop/my-app/test-results/list-list-chromium/list0-diff.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/lujing/Desktop/my-app/test-results/list-list-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lujing/Desktop/my-app/test-results/list-list-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lujing/Desktop/my-app/e2e/list.spec.ts",
+                    "column": 41,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "37b610bec64c138c63be-f7b72bfea0145bd9a23b",
+          "file": "list.spec.ts",
+          "line": 24,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Button, Drawer } from 'antd';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button onClick={showDrawer}>添加通知</Button>
+      <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
+        <div className="select-title">通知发送设置</div>
+        <div className="select-title">收件人</div>
+        <div>邮箱</div>
+      </Drawer>
     </div>
   );
 }

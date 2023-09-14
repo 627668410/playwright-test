@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  color : #656572;
+  font-size: 12px;
 }
 
 .App-logo {
@@ -12,7 +14,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.select-title{
+  margin: 15px 0px 15px 0px;
+  font-size: 12px;
+  font-weight: 700;
+}
+  
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
